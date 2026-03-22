@@ -24,7 +24,7 @@ const Home = ({ setSelectedCategory }) => {
   };
 
   return (
-    <div className="home-page">
+    <div className="home-page" style={{backgroundColor: '#ffebeb'}}>
       {/* --- HERO CAROUSEL --- */}
       <div id="shofyHero" className="carousel slide hero-carousel" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -57,12 +57,12 @@ const Home = ({ setSelectedCategory }) => {
 
       {/* --- CATEGORIES SECTION --- */}
       <div className="container py-5 mt-4">
-        <h2 className="fw-bold text-center mb-5">Browse Categories</h2>
+        <h2 className="fw-bold text-center mb-5 pt-3 pb-3 " style={{backgroundColor: '#ebc3cb', width: '1100px'}}>Browse Categories</h2>
         <div className="row justify-content-center">
           {categories.map((cat, index) => (
             <div className="col-6 col-md-3 mb-4" key={index}>
               <div 
-                className="card h-100 border-0 shadow-sm p-4 category-card text-center" 
+                className="card h-100 border-0 shadow-sm p-4 category-card text-center" style={{backgroundColor: '#eee1e2', fontFamily: 'cursive'}} 
                 onClick={() => handleCategoryClick(cat.name)}
               >
                 <div className="category-circle">

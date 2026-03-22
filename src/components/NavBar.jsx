@@ -53,7 +53,7 @@ const Navbar = ({ searchTerm, setSearchTerm, selectedCategory, setSelectedCatego
               {selectedCategory === "All" ? "Categories" : selectedCategory}
             </button>
             <ul className="dropdown-menu dropdown-menu-dark">
-              {["All", "Laptops", "Phones", "Tablets", "Accessories"].map(cat => (
+              {["All", "Laptops", "Phones", "Tablets","Gaming", "Accessories"].map(cat => (
                 <li key={cat}>
                   <button className="dropdown-item" onClick={() => { setSelectedCategory(cat); navigate('/products'); }}>
                     {cat}
