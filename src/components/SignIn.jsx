@@ -73,7 +73,7 @@ const SignIn = () => {
             <input 
               type="email" 
               className="form-control bg-light" 
-              placeholder="name@example.com"
+              placeholder="Enter your Email"
               value={email} 
               onChange={(e) => setEmail(e.target.value)} 
               required
@@ -85,7 +85,7 @@ const SignIn = () => {
             <input 
               type="password" 
               className="form-control bg-light" 
-              placeholder="••••••••"
+              placeholder="Enter password"
               value={password} 
               onChange={(e) => setPassword(e.target.value)} 
               required

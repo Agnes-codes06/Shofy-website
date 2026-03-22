@@ -57,7 +57,7 @@ const Home = ({ setSelectedCategory }) => {
 
       {/* --- CATEGORIES SECTION --- */}
       <div className="container py-5 mt-4">
-        <h2 className="fw-bold text-center mb-5 pt-3 pb-3 " style={{backgroundColor: '#ebc3cb', width: '1100px'}}>Browse Categories</h2>
+        <h2 className="fw-bold text-center mb-5 pt-3 pb-3 " style={{backgroundColor: '#ebc3cb'}}>Browse Categories</h2>
         <div className="row justify-content-center">
           {categories.map((cat, index) => (
             <div className="col-6 col-md-3 mb-4" key={index}>
