@@ -70,7 +70,7 @@ const SignUp = () => {
 
                 <input type="text" placeholder='Enter your name' className='form-control' value={username} onChange={(e)=>setUsername(e.target.value)}/>
                 <br />
-                <input type="email" placeholder='Enter password' className='form-control' value={email} onChange={(e)=>setEmail(e.target.value)} />
+                <input type="email" placeholder='Enter email' className='form-control' value={email} onChange={(e)=>setEmail(e.target.value)} />
                 <br />
                 <input type="tel"placeholder='Enter phone number' className='form-control' value={phone}  onChange={(e)=>setPhone(e.target.value)} />
                 <br />
