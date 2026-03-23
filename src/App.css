@@ -125,3 +125,171 @@ footer {
 .view-all-link:hover {
   letter-spacing: 1px;
 }
+
+
+/* Product Card Hover Effect */
+.home-product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px !important;
+}
+
+.home-product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.home-card-img {
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.home-product-card:hover .home-card-img {
+  transform: scale(1.1);
+}
+
+/* Hero Carousel Overlay */
+.carousel-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.hero-img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Floating Animation for Banner Image */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-animation {
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 20px 20px rgba(0,0,0,0.4));
+}
+
+/* Category Circle Wrap */
+.cat-img-wrap {
+  width: 80px;
+  height: 80px;
+}
+
+/* Carousel Image height */
+.hero-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Category Card Hover Effect */
+.category-card {
+  transition: all 0.3s ease;
+  border-radius: 20px !important;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  background-color: #e5d2d4 !important; /* Slightly darker on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.category-card:hover .view-all-link {
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+/* Best Selling Card Hover */
+.best-selling-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px !important;
+}
+
+.best-selling-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Category Circle Image hover */
+.category-card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+/* Category Card Hover Effect */
+.category-card {
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px !important;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  background-color: #fce4ec !important; /* Slightly darker pink hover */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15) !important;
+}
+
+.category-card:hover .view-all-link {
+  text-decoration: underline;
+  color: #0d6efd !important;
+}
+
+.category-circle img {
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-circle img {
+  transform: scale(1.1);
+}
+
+/* Best Selling Card Hover */
+.best-selling-card {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.best-selling-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Carousel Image height */
+.hero-img {
+  height: 480px;
+  object-fit: cover;
+}
+
+/* Home Product Cards */
+.product-card-home {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px !important;
+}
+
+.product-card-home:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Category Cards Hover */
+.category-card {
+  transition: all 0.3s ease;
+  border-radius: 20px !important;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  background-color: #fce4ec !important;
+}
+
+/* Ensure images don't overflow */
+.img-container img {
+  transition: transform 0.3s ease;
+}
+
+.product-card-home:hover .img-container img {
+  transform: scale(1.08);
+}
